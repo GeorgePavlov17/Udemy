@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333 url('https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        @media(max-height: 450px) {
+            header {
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque aliquid labore et natus quidem.</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+        <h3>About our company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro perferendis, maxime quia quo architecto
+            corporis neque accusantium deserunt quam vitae quasi atque. Dignissimos distinctio asperiores et
+            exercitationem dolore. Labore optio fugiat ad odit impedit molestiae. Illum, animi. Deleniti accusantium ad,
+            qui rem ea fuga est nemo reprehenderit architecto officia.</p>
+    </section>
+</body>
+
+</html>
