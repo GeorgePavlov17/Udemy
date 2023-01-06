@@ -228,17 +228,17 @@
                 <div class="column">
                     <div class="column-2 bg-light">
                         <h2>Request callback</h2>
-                        <form action="" class="callback-form">
+                        <form action="process.php" method="POST" class="callback-form">
                             <div class="form-control">
-                                <label for="name"></label>
+                                <label for="name">Name</label>
                                 <input type="text" id="name" name="name" placeholder="Enter name">
                             </div>
                             <div class="form-control">
-                                <label for="email"></label>
+                                <label for="email">Email</label>
                                 <input type="email" id="email" name="email" placeholder="Enter email">
                             </div>
                             <div class="form-control">
-                                <label for="phone"></label>
+                                <label for="phone">Phone</label>
                                 <input type="text" id="phone" name="phone" placeholder="Enter phone">
                             </div>
                             <input type="submit" value="Send" id="submit" class="btn">
@@ -263,6 +263,7 @@
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
         </script>
     <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
         const navbar = document.getElementById('navbar');
         let scrolled = false;
