@@ -1,0 +1,16 @@
+#div {
+    width: 300px;
+    border: 15px solid green;
+    margin: 50px;
+    padding: 20px;
+}
+
+#newDiv {
+    width: 300px;
+    display: block;
+    border: 15px solid blue;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 20 px;
+    text-align: center;
+}

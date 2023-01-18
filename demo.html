@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Get info from an object and display it -->
+    <div>
+        <button id="moreBtn">Show more</button>
+        <ul id="show">
+    </div>
+
+    </ul>
+
+    <!-- AJAX -->
+    <div id="div">
+        <h2>Let AJAX change this text</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <div id="newDiv">
+        <h2>Second Ajax example</h2>
+        <button type="button" onclick="secondAjax()">Change and this content</button>
+    </div>
+
+    <!-- JSON info and display it -->
+    <div>
+        <p id="demo"></p>
+        <p id="carsList"></p>
+        <script>
+            //JS string containing JSON syntax
+            let text = '{ "employees" : [' +
+            '{ "firstName":"John" , "lastName":"Doe" },' +
+            '{ "firstName":"Anna" , "lastName":"Smith" },' +
+            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+            const obj = JSON.parse(text);
+
+            document.getElementById('carsList').innerHTML
+            = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+        </script>
+
+        <script>
+            //JS array containing objects
+            let cars = [
+                '{"make": "Mercedes", "model": "Eclass"}'
+            ];
+            
+            const carsObj = JSON.parse(cars);
+
+            document.getElementById('demo').innerHTML = 
+            carsObj.make + ' - ' + carsObj.model;
+        </script>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+</html>
